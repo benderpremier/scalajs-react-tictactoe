@@ -4,7 +4,7 @@ package example
 import japgolly.scalajs.react._
 import japgolly.scalajs.react.vdom.html_<^._
 import org.scalajs.dom
-import components.{GameComponent, HelloComponent}
+import components.GameComponent
 import japgolly.scalajs.react.WebpackRequire
 
 import scala.scalajs.js
