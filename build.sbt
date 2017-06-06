@@ -1,5 +1,3 @@
-enablePlugins(WorkbenchPlugin)
-
 val client =
   project.in(file("client"))
     .enablePlugins(ScalaJSBundlerPlugin, ScalaJSPlugin, ScalaJSWeb)
@@ -16,7 +14,7 @@ val client =
 
 val server =
   project.in(file("server"))
-    .enablePlugins(SbtWeb, WebScalaJSBundlerPlugin)
+    .enablePlugins(SbtWeb, WebScalaJSBundlerPlugin, WorkbenchPlugin)
     .settings(
       scalaVersion := "2.12.2",
       scalaJSProjects := Seq(client),
